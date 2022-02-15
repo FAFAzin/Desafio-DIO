@@ -1,0 +1,50 @@
+Introdução ao Git e GitHub 
+- Comandos Básicos para um bom desempenho no terminal.(windows)
+
+- cd -> serve para acessar uma pasta.
+- dir -> serve para listar pastas ou arquivos.
+- mkdir -> serve para criar uma pasta.
+- del/rmdir -> remover uma pasta.
+
+
+Entendendo como o Git funciona por baixo dos panos
+
+- sha1 -> criptografia.
+- Sistema Distribuído.
+- Segurança.
+
+-> openssl sha1 arquivo.txt - comando para gerar uma criptografia de arquivo.
+
+
+Objetos internos do Git
+
+- Blobs 
+- Trees
+- Commits 
+
+
+Chaves ssh e Tokens
+
+- ssh-keygen -t ed25519 -c email -> comando para criar as chaves de acesso via SSH.
+(depois que a chave pública e privada forem geradas, apenas a pública deve ser informada o GitHub)
+
+-eval $ (ssh-agent -s)
+-ssh-add chave privada
+
+
+Para clonar um repositório
+
+- pegar o GitHub o caminho ssh 
+- dá um git clone + caminho ssh
+
+
+Para gerar um tokenn de acesso pessoal 
+
+- develops settings
+- personal access token
+- generate new token 
+(importante guardar esse token em um lugar seguro.)
+(para clonar usando o token de acesso deve usar o caminho https.)
+- git clone caminho https
+
+
